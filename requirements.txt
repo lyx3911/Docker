@@ -11,3 +11,4 @@ segmentation-models-pytorch==0.2.1
 torch==1.8.1
 torchvision==0.9.1
 tqdm==4.62.3
+matplotlib==3.4.3

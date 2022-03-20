@@ -5,8 +5,9 @@ RUN  apt-get update
 RUN  apt-get upgrade -y
 
 # Install python3
-RUN  apt-get install -y python3
+RUN apt-get install -y python3
 RUN apt-get install -y libgl1-mesa-dev
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y libglib2.0-dev
 
 ADD . /
 WORKDIR /

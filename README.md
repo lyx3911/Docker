@@ -149,9 +149,18 @@ CMD ["sh", "run.sh"]
 
    也可以从C盘搬到其他盘去，但是具体太麻烦了先将就着用
 
+2. import cv2报错
+
+   在dockerfile中加入：
+
+   ```bash
+   RUN apt-get install -y libgl1-mesa-dev
+   RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y libglib2.0-dev
+   ```
+
 2. 不能解决的error
 
-   重启docker就完事了，重启docker不行的话就重启电脑吧。
+   重启docker就完事了，重启docker不行的话就重启电脑吧，毕竟重启能解决90%的问题。
 
 
 
